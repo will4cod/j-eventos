@@ -9,12 +9,91 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style media="screen">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #780000;
+}
+
+body {
+    /* height: 100vh; */
+    /* procurar imagem */
+    background-image: url("/img/16101_generated.jpg");
+    /* background-color: aqua; */
+    background-repeat: no-repeat;
+    /* background-size: 100% 140px; */
+    background-position: 0 100px;
+    /* overflow: hidden; */
+    font-family: arial;
+}
+
+header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar {
+    transition: .3s linear;
+}
+
+header .navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-around;
+}
+
+header .navbar ul li {
+    font-size: 18px;
+}
+
+header .navbar ul li:hover {
+    color: var(--color);
+    cursor: pointer;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo > img {
+    height: 50px;
+    margin: 0 10px;
+}
 
     </style>
 </head>
 <body>
+
+    <input type="checkbox" id="toggle">
     <header>
-        
+        <div class="logo">
+            <!-- procurar imagem -->
+            <img src="img/ticket.png" alt="Logo" srcset="">
+            <h2>J eventos</h2>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>Sobre</li>
+                <li>Contatos</li>
+                <li>Blog</li>
+                <li>Portifolio</li>
+            </ul>
+        </div>
     </header>
 </body>
 </html>
